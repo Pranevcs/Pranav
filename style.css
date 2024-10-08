@@ -1,0 +1,113 @@
+/* Global styles */
+
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+header .intro h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: -20px;
+    
+}
+
+header .intro p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #666;
+}
+
+header .profile-picture img {
+    margin-top: 2rem;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* About Section */
+#about {
+    margin-top: -100px;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Social Media Links */
+#social-media {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#social-media h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    margin: 0 1rem;
+    padding: 0.7rem 1.5rem;
+    border: 2px solid #000;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Quote Section (Footer) */
+footer {
+    padding: 4rem 2rem;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+footer blockquote {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #999;
+}
