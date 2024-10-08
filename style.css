@@ -87,8 +87,8 @@ header .profile-picture img {
 }
 
 .social-links a:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 /* Quote Section (Footer) */
@@ -102,7 +102,7 @@ footer blockquote {
     font-size: 1.5rem;
     font-weight: 300;
     font-style: italic;
-    color: #666;
+    color: #fff;
     max-width: 700px;
     margin: 0 auto 2rem;
 }
