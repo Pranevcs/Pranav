@@ -68,14 +68,15 @@ header .profile-picture img {
     text-align: center;
 }
 
-#social-links {
+.social-links {
     display: flex;
     flex-direction: column;  /* Stack the buttons vertically */
     align-items: center;     /* Center the buttons horizontally */
+    gap: 1.5rem;             /* Adds space between buttons */
 }
 
 .social-links a {
-    margin: 1rem 0;  /* Add vertical margin between buttons */
+    display: block;          /* Makes sure each button takes up its own line */
     padding: 0.7rem 1.5rem;
     border: 2px solid #000;
     border-radius: 50px;
@@ -84,8 +85,8 @@ header .profile-picture img {
     text-decoration: none;
     color: #000;
     transition: background-color 0.3s, color 0.3s;
-    width: 200px;  /* Optionally control the width for uniform button size */
-    text-align: center;  /* Center the text within the button */
+    text-align: center;      /* Center the text within the button */
+    width: 200px;            /* Set a fixed width for consistent button size */
 }
 
 .social-links a:hover {
