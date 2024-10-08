@@ -101,7 +101,7 @@ footer {
 footer blockquote {
     font-size: 1rem;
     font-weight: 300;
-    font-style: italic;
+    font-style: bold;
     color: #000;
     max-width: 700px;
     margin: 0 auto 2rem;
