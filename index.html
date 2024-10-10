@@ -6,6 +6,75 @@
     <title>pranavcs</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styling for the email notification box */
+        .notification-box {
+            background-color: #ffffff;
+            border-radius: 12px;
+            width: 350px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+            margin: 50px auto; /* Center the box */
+        }
+
+        .notification-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .notification-box h3 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .notification-box input[type="email"] {
+            width: 85%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: border-color 0.3s ease;
+        }
+
+        .notification-box input[type="email"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .notification-box button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .notification-box button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .notification-box .success-message {
+            margin-top: 15px;
+            color: green;
+            font-size: 14px;
+            display: none;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -23,17 +92,16 @@
     <section id="about">
         <h2><b>About Me</b></h2>
         <p>
-Hey I'm Pranav, a mechanical engineering student who's
-slightly obsessed with robots. When I'm not buried in
-textbooks or tinkering with gears and circuits, you can
-find me designing weird things.
-
-
-
-I'm fascinated by the intersection of mechanics and
-innovation , which is probably why I'm obsessed with
-robotics. Whether it's building prototypes or just
-imagining the future of automation, I'm all in.
+            Hey I'm Pranav, a mechanical engineering student who's
+            slightly obsessed with robots. When I'm not buried in
+            textbooks or tinkering with gears and circuits, you can
+            find me designing weird things.
+        </p>
+        <p>
+            I'm fascinated by the intersection of mechanics and
+            innovation, which is probably why I'm obsessed with
+            robotics. Whether it's building prototypes or just
+            imagining the future of automation, I'm all in.
         </p>
     </section>
 
@@ -47,6 +115,17 @@ imagining the future of automation, I'm all in.
         </div>
     </section>
 
+    <!-- Email Notification Section -->
+    <section id="email-subscription">
+        <div class="notification-box">
+            <h3>Subscribe to Notifications</h3>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <br>
+            <button onclick="subscribe()">Subscribe</button>
+            <p class="success-message" id="success-message">Thank you for subscribing!</p>
+        </div>
+    </section>
+
     <!-- Quote Section -->
     <footer>
         <blockquote>
@@ -54,5 +133,21 @@ imagining the future of automation, I'm all in.
         </blockquote>
         <p>&copy; 2024 pranevcs | All Rights Reserved</p>
     </footer>
+
+    <script>
+        function subscribe() {
+            var email = document.getElementById("email").value;
+            var successMessage = document.getElementById("success-message");
+
+            if (email) {
+                successMessage.style.display = "block";
+                document.getElementById("email").value = "";  // Clear the input field
+                // Here you can add your email handling logic (e.g., API request)
+                console.log("Email submitted: " + email);
+            } else {
+                alert("Please enter a valid email address");
+            }
+        }
+    </script>
 </body>
 </html>
