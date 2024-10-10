@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pranavcs</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  <!-- External stylesheet -->
     <style>
+        /* Remove the button styling here */
+        /* You can keep styles for the other elements, like the email input field */
+
         /* Styling for the email notification box */
         .notification-box {
             background-color: #ffffff;
@@ -43,36 +46,6 @@
         .notification-box input[type="email"]:focus {
             border-color: #4CAF50;
             outline: none;
-        }
-
-        .notification-box button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 18px;
-            margin-top: 10px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        .notification-box button:hover {
-            background-color: #45a049;
-            transform: translateY(-2px);
-        }
-
-        .notification-box .success-message {
-            margin-top: 15px;
-            color: green;
-            font-size: 14px;
-            display: none;
-            animation: fadeIn 0.5s ease forwards;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
         }
     </style>
 </head>
