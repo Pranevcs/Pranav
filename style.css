@@ -112,10 +112,28 @@ footer p {
     color: #999;
 }
 
+/* Email Notification Section (Subscribe Button) */
+.notification-box button {
+    background-color: black; /* Changed to black */
+    color: white; /* Changed to white */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.notification-box button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+    transform: translateY(-2px);
+}
+
 /* Email Success Message */
 .notification-box .success-message {
     margin-top: 15px;
-    color: black; /* Changed from green to black */
+    color: black;
     font-size: 14px;
     display: none;
     animation: fadeIn 0.5s ease forwards;
