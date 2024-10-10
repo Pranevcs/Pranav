@@ -1,6 +1,4 @@
 /* Global styles */
-
-
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #ffffff;
@@ -25,7 +23,6 @@ header .intro h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: -20px;
-    
 }
 
 header .intro p {
@@ -113,4 +110,18 @@ footer blockquote {
 footer p {
     font-size: 1rem;
     color: #999;
+}
+
+/* Email Success Message */
+.notification-box .success-message {
+    margin-top: 15px;
+    color: black; /* Changed from green to black */
+    font-size: 14px;
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
