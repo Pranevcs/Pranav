@@ -1,12 +1,11 @@
-/* Global styles */
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color:#ffffff;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    font-size: 18px;
+    line-height: 1.8;
+    font-size: 15px;
 }
 
 /* Header Section */
@@ -15,27 +14,27 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
     text-align: center;
 }
 
 header .intro h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: -20px;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: -28px;
 }
 
 header .intro p {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: #666;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #888;
 }
 
 header .profile-picture img {
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
 }
 
@@ -43,103 +42,102 @@ header .profile-picture img {
 #about {
     margin-top: -100px;
     padding: 4rem 2rem;
-    text-align: center;
+    text-align: justify;
 }
 
 #about h2 {
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #about p {
     max-width: 700px;
     margin: 0 auto;
     font-size: 1.2rem;
-    color: #333;
+    color: #888;
 }
 
 /* Social Media Links */
 #social-media {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     text-align: center;
 }
 
 .social-links {
     display: flex;
-    flex-direction: column;  /* Stack the buttons vertically */
+    flex-direction: column; /* Stack the buttons vertically */
     align-items: center;     /* Center the buttons horizontally */
-    gap: 1.5rem;             /* Adds space between buttons */
+    gap: .6rem;             /* Adds space between buttons */
 }
 
 .social-links a {
     display: block;          /* Makes sure each button takes up its own line */
-    padding: 0.7rem 1.5rem;
-    border: 2px solid #000;
+    padding: .5rem .3rem;
+    border: 1px solid #FFF;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     transition: background-color 0.3s, color 0.3s;
     text-align: center;      /* Center the text within the button */
-    width: 200px;            /* Set a fixed width for consistent button size */
+    width: 300px;            /* Set a fixed width for consistent button size */
 }
 
 .social-links a:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Quote Section (Footer) */
-footer {
-    padding: 4rem 2rem;
-    text-align: center;
-    border-top: 1px solid #eee;
-}
-
-footer blockquote {
-    font-size: 1rem;
-    font-weight: 300;
-    font-style: bold;
+    background-color: #fff;
     color: #000;
-    max-width: 700px;
-    margin: 0 auto 2rem;
+}
+#the-mission {
+  background-color: #000;
+  color: #eee;
+  padding: 5rem 2rem;
+  text-align: center;
 }
 
-footer p {
-    font-size: 1rem;
-    color: #999;
+#the-mission h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
 }
 
-/* Email Notification Section (Subscribe Button) */
-.notification-box button {
-    background-color: black; /* Changed to black */
-    color: white; /* Changed to white */
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+#the-mission p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.8;
 }
 
-.notification-box button:hover {
-    background-color: #333; /* Slightly lighter black on hover */
-    transform: translateY(-2px);
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 2px solid #eee;
+  color: #eee;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-/* Email Success Message */
-.notification-box .success-message {
-    margin-top: 15px;
-    color: black;
-    font-size: 14px;
-    display: none;
-    animation: fadeIn 0.5s ease forwards;
+.cta-button:hover {
+  background-color: #eee;
+  color: #111;
+}
+.ending-quote {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  opacity: 0.7;
+  transition: opacity 0.4s ease;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+.ending-quote:hover {
+  opacity: 5;
+  color: #ccc;
 }
