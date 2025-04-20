@@ -136,7 +136,7 @@ header .profile-picture img {
   opacity: 0.7;
   transition: opacity 0.4s ease;
 overflow: hidden;
-  border-right: .1em solid white;
+  border-right: .1em solid black;
   white-space: nowrap;
   width: 0;
   animation: typing 4.5s steps(500, end) forwards, blink .75s step-end infinite;
